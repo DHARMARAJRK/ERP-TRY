@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <a href="index.html">Dashboard</a>
+</div>
+
+<div class="main">
+  <h1>Products</h1>
+
+  <div class="filters">
+    <button onclick="filter('all')">All</button>
+    <button onclick="filter('Beer')">Beer</button>
+    <button onclick="filter('Wine')">Wine</button>
+    <button onclick="filter('Spirits')">Spirits</button>
+  </div>
+
+  <div id="grid" class="grid"></div>
+</div>
+
+<script src="js/products.js"></script>
+</body>
+</html>

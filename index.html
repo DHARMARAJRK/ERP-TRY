@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadDashboard()">
+
+<div class="sidebar">
+  <h2>ERP SYSTEM</h2>
+
+  <a href="index.html">Dashboard</a>
+  <a href="products.html">Products</a>
+  <a href="sales.html">Sales</a>
+  <a href="invoice.html">Invoices</a>
+  <a href="login.html">Logout</a>
+</div>
+
+<div class="main">
+  <h1>Dashboard</h1>
+
+  <div class="stats">
+    <div class="card">Products: <span id="pCount"></span></div>
+    <div class="card">Sales: <span id="sCount"></span></div>
+    <div class="card">Revenue: $<span id="revenue"></span></div>
+  </div>
+
+  <canvas id="chart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
